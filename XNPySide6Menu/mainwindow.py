@@ -25,7 +25,7 @@ class MainWindow(QMainWindow):
     """晓楠QT 菜单控件
 
     添加菜单方法:
-        self.addMuen("菜单",QPixmap(":/img/img.svg"),["我是菜单1","我是菜单2","我是菜单3","我是菜单4"])
+        self.addMuen("菜单",":image/set.svg",":image/set_press.svg",["我是菜单1","我是菜单2","我是菜单3","我是菜单4"])
     添加子页面方法 - 按类名添加
         self.addWidget(QLabel, "我是菜单1")
     添加子页面方法 - 按实例添加
