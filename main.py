@@ -9,6 +9,7 @@ from win import HShiBie
 from win import DXF
 from win import GCode
 from win import FRID
+from win import OutTableQwidget, BackTableQwidget
 
 
 class Window(MainWindow):
@@ -24,11 +25,19 @@ class Window(MainWindow):
             ":image/set_press.svg",
             ["H型钢识别界面", "DXF导入界面", "G代码保存界面", "FRID"]
         )
+        self.addMuen(
+            "进存销系统",
+            ":image/set.svg",
+            ":image/set_press.svg",
+            ["出库", "归还"]
+        )
         # 添加窗口
         self.addWidget(HShiBie, "H型钢识别界面")
         self.addWidget(DXF, "DXF导入界面")
         self.addWidget(GCode, "G代码保存界面")
         self.addWidget(FRID, "FRID")
+        self.addWidget(OutTableQwidget, "出库")
+        self.addWidget(BackTableQwidget, "归还")
 
 
 if __name__ == "__main__":
